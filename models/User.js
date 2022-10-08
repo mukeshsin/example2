@@ -10,13 +10,16 @@ const { DataTypes } = Sequelize;
 const User = db.define('users', {
   // Define attributes
   firstName: {
-    type: Sequelize.string
+    type: DataTypes.STRING,
+  },
+  middleName: {
+    type: DataTypes.STRING,
   },
   lastName: {
-    type: Sequelize.string
+    type: DataTypes.STRING,
   },
-  email: {
-    type: Sequelize.string
+  age: {
+    type: DataTypes.INTEGER,
   }
 },{
   // Freeze Table Name
